@@ -1,0 +1,29 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "batch_01/0017.eml",
+    "page": 1
+   },
+   "quote": "Please find attached statement TX-ST-203501 for services under TBX-US-EXP-01.",
+   "invoice_id": "TXST203501",
+   "is_statement": true,
+   "is_credit_note": false
+  },
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0017.eml",
+    "page": 1
+   },
+   "quote": "Please find attached statement TX-ST-203501 for services under TBX-US-EXP-01. Kindly process payment by the due date shown.",
+   "event_type": "other",
+   "sender_name": "Tarrowby Billing",
+   "sender_email": "billing@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2035-02-04",
+   "contract_id": "TBX-US-EXP-01"
+  }
+ ]
+}

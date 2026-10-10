@@ -1,0 +1,28 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0001.eml",
+    "page": 1
+   },
+   "event_type": "other",
+   "sender_name": "Joaquin Rathbone",
+   "sender_email": "joaquin.rathbone@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2034-10-02",
+   "quote": "Attached is the executed Master Services Agreement (Express Air) TBX-US-EXP-01, signed by both parties. It takes effect on 2034-10-20.",
+   "author": "Joaquin Rathbone"
+  },
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "batch_01/0001.eml",
+    "page": 1
+   },
+   "contract_id": "TBX-US-EXP-01",
+   "effective_date": "2034-10-20",
+   "quote": "executed Master Services Agreement (Express Air) TBX-US-EXP-01, signed by both parties. It takes effect on 2034-10-20."
+  }
+ ]
+}

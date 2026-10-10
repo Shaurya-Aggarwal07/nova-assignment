@@ -1,0 +1,21 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "eval_batch_scenario_3_duplicate/contract.eml",
+    "page": 1
+   },
+   "quote": "Contract C-300\nAir Freight is $500.",
+   "contract_id": "C-300",
+   "currency": "USD",
+   "rates": [
+    {
+     "charge_type": "Air Freight",
+     "rate": "500.00",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

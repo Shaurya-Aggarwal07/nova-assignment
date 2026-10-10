@@ -1,0 +1,20 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0023.eml",
+    "page": 1
+   },
+   "quote": "We extend the due date of invoice TX-US-2035-0188 to 2035-04-03. No late fee applies if it is paid by then.",
+   "event_type": "payment_extension",
+   "sender_name": "Signe Underhill",
+   "sender_email": "signe.underhill@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2035-03-06",
+   "invoice_id": "TXUS20350188",
+   "new_due_date": "2035-04-03",
+   "late_fee_waived_if_paid_by": "2035-04-03"
+  }
+ ]
+}

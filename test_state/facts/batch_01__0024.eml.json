@@ -1,0 +1,83 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0024.eml",
+    "page": 1
+   },
+   "event_type": "rate_notice",
+   "sender_name": "Joaquin Rathbone",
+   "sender_email": "joaquin.rathbone@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2035-03-06",
+   "author": "Joaquin Rathbone",
+   "reference": "TBX-US-EXP-01/RN-USC3-INS1-2035-03-13",
+   "lane": "USC3-INS1",
+   "effective_date": "2035-03-13",
+   "end_date": "2035-09-25",
+   "clause_reference": "3.5",
+   "quote": "Under clause 3.5 we give notice of the following rates for lane USC3-INS1, effective 2035-03-13 to 2035-09-25:"
+  },
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "batch_01/0024.eml",
+    "page": 1
+   },
+   "contract_id": "TBX-US-EXP-01",
+   "currency": "USD",
+   "rates": [
+    {
+     "lane": "USC3-INS1",
+     "effective_date": "2035-03-13",
+     "end_date": "2035-09-25",
+     "charge_type": "minimum_charge",
+     "amount": "90.77",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-INS1",
+     "effective_date": "2035-03-13",
+     "end_date": "2035-09-25",
+     "charge_type": "per_kg",
+     "weight_min_kg": "0",
+     "weight_max_kg": "44.5",
+     "rate": "5.28",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-INS1",
+     "effective_date": "2035-03-13",
+     "end_date": "2035-09-25",
+     "charge_type": "per_kg",
+     "weight_min_kg": "45",
+     "weight_max_kg": "99.5",
+     "rate": "5.03",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-INS1",
+     "effective_date": "2035-03-13",
+     "end_date": "2035-09-25",
+     "charge_type": "per_kg",
+     "weight_min_kg": "100",
+     "weight_max_kg": "299.5",
+     "rate": "4.79",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-INS1",
+     "effective_date": "2035-03-13",
+     "end_date": "2035-09-25",
+     "charge_type": "per_kg",
+     "weight_min_kg": "300",
+     "weight_max_kg": null,
+     "rate": "4.57",
+     "currency": "USD"
+    }
+   ],
+   "quote": "USC3-INS1 minimum charge: 90.77 USD\nUSC3-INS1 0-44.5 kg: 5.28 USD\nUSC3-INS1 45-99.5 kg: 5.03 USD\nUSC3-INS1 100-299.5 kg: 4.79 USD\nUSC3-INS1 300+ kg: 4.57 USD"
+  }
+ ]
+}

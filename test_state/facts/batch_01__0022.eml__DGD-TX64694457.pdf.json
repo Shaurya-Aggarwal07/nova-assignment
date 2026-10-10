@@ -1,0 +1,26 @@
+{
+ "facts": [
+  {
+   "fact_type": "shipment_record",
+   "source": {
+    "doc_ref": "batch_01/0022.eml#DGD-TX64694457.pdf",
+    "page": 1
+   },
+   "quote": "SHIPPER'S DECLARATION FOR AWB TX64694457\nGoods: diagnostic reagent kits\nUN1845 Dry ice 5.5 kg - refrigerant only",
+   "awb": "TX64694457",
+   "shipper": "Quillmere Pharma Inc.",
+   "goods_description": "diagnostic reagent kits",
+   "dangerous_goods": [
+    {
+     "un_number": "UN1845",
+     "description": "Dry ice",
+     "quantity_kg": "5.5",
+     "role": "refrigerant only"
+    }
+   ],
+   "document_type": "Shipper's Declaration for Dangerous Goods",
+   "page_count": "1 of 1",
+   "tracking_events": []
+  }
+ ]
+}

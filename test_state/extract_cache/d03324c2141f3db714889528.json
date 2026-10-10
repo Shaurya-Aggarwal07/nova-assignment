@@ -1,0 +1,21 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0020.eml",
+    "page": 1
+   },
+   "quote": "Shipment TX67876745 was picked up at USC3 on 2035-03-01.",
+   "event_type": "pickup",
+   "sender_name": "Aurelie Whitlock",
+   "sender_email": "aurelie.whitlock@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2035-03-01",
+   "author": "Aurelie Whitlock",
+   "shipment_id": "TX67876745",
+   "pickup_date": "2035-03-01",
+   "pickup_location": "USC3"
+  }
+ ]
+}

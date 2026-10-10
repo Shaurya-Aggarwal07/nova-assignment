@@ -1,0 +1,23 @@
+{
+ "facts": [
+  {
+   "fact_type": "shipment_record",
+   "source": {
+    "doc_ref": "batch_01/0013.eml#AWB-TX32084460.pdf",
+    "page": 1
+   },
+   "quote": "AIR WAYBILL TX32084460\nExecuted on 2035-01-14 at USE1\nOrigin USE1 | Destination USW2",
+   "awb": "TX32084460",
+   "carrier": "Tarrowby Express Inc.",
+   "executed_date": "2035-01-14",
+   "origin": "USE1",
+   "destination": "USW2",
+   "pieces": 5,
+   "actual_weight_kg": "518.9",
+   "chargeable_weight_kg": "519",
+   "dimensions_cm": "72x72x72",
+   "nature_of_goods": "diagnostic reagent kits",
+   "tracking_events": []
+  }
+ ]
+}

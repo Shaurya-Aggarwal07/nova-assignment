@@ -1,0 +1,22 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0002.eml",
+    "page": 1
+   },
+   "quote": "Attached is Amendment No. 1 to TBX-US-EXP-01, signed by both parties.",
+   "event_type": "other",
+   "sender_name": "Joaquin Rathbone",
+   "sender_email": "joaquin.rathbone@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2034-11-09",
+   "author": "Joaquin Rathbone",
+   "description": "Transmission of signed Amendment No. 1 to contract TBX-US-EXP-01, signed by both parties.",
+   "attachments": [
+    "TBX-US-EXP-01-AMD-1.pdf"
+   ]
+  }
+ ]
+}

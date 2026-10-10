@@ -1,0 +1,27 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0004.eml",
+    "page": 1
+   },
+   "event_type": "waiver",
+   "sender_name": "Signe Underhill",
+   "sender_email": "signe.underhill@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2034-11-19",
+   "waiver_scope": {
+    "type": "standing",
+    "description": "the Delivery fee on AWB TX45998993",
+    "shipment_ids": [],
+    "charge_types": []
+   },
+   "waiver_scope_type": "single_shipment",
+   "charge_type": "Delivery fee",
+   "awb": "TX45998993",
+   "author": "Signe Underhill",
+   "quote": "we waive the Delivery fee on AWB TX45998993. Please disregard that charge if it appears on an invoice."
+  }
+ ]
+}

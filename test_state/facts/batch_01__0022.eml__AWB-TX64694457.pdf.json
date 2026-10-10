@@ -1,0 +1,24 @@
+{
+ "facts": [
+  {
+   "fact_type": "shipment_record",
+   "source": {
+    "doc_ref": "batch_01/0022.eml#AWB-TX64694457.pdf",
+    "page": 1
+   },
+   "quote": "AIR WAYBILL TX64694457\nExecuted on 2035-02-24 at USS2\nOrigin USS2 | Destination INW2",
+   "awb": "TX64694457",
+   "executed_date": "2035-02-24",
+   "origin": "USS2",
+   "destination": "INW2",
+   "pieces": 5,
+   "actual_weight_kg": "191.7",
+   "chargeable_weight_kg": "192",
+   "dimensions_cm": "51x51x51",
+   "nature_of_goods": "diagnostic reagent kits",
+   "handling_information": "UN1845 dry ice 5.5 kg",
+   "carrier": "Tarrowby Express Inc.",
+   "tracking_events": []
+  }
+ ]
+}

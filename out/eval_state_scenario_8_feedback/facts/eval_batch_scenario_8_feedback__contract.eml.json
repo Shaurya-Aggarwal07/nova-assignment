@@ -1,0 +1,20 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "eval_batch_scenario_8_feedback/contract.eml",
+    "page": 1
+   },
+   "quote": "Contract C-800\nRate: 100.00 USD.",
+   "contract_id": "C-800",
+   "currency": "USD",
+   "rates": [
+    {
+     "rate": "100.00",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0022.eml",
+    "page": 1
+   },
+   "event_type": "other",
+   "sender_name": "Tarrowby Billing",
+   "sender_email": "billing@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2035-03-04",
+   "quote": "Please find attached invoice TX-US-2035-0198 for services under TBX-US-EXP-01. Kindly process payment by the due date shown."
+  },
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "batch_01/0022.eml",
+    "page": 1
+   },
+   "invoice_id": "TXUS20350198",
+   "is_credit_note": false,
+   "is_statement": false,
+   "quote": "Please find attached invoice TX-US-2035-0198 for services under TBX-US-EXP-01."
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "eval_batch_scenario_7_clean_but_suspicious/contract.eml",
+    "page": 1
+   },
+   "quote": "Contract C-123\nHeavy machinery rate is 5000.00 USD per kg.",
+   "contract_id": "C-123",
+   "currency": "USD",
+   "rates": [
+    {
+     "charge_type": "Heavy machinery",
+     "rate": "5000.00",
+     "unit": "per kg",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

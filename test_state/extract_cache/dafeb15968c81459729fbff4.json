@@ -1,0 +1,23 @@
+{
+ "facts": [
+  {
+   "fact_type": "shipment_record",
+   "source": {
+    "doc_ref": "batch_01/0011.eml#AWB-TX32565297.pdf",
+    "page": 1
+   },
+   "quote": "AIR WAYBILL TX32565297\nExecuted on 2035-01-07 at USS2\nOrigin USS2 | Destination INW2",
+   "awb": "TX32565297",
+   "executed_date": "2035-01-07",
+   "origin": "USS2",
+   "destination": "INW2",
+   "pieces": 1,
+   "actual_weight_kg": "548.9",
+   "chargeable_weight_kg": "549",
+   "dimensions_cm": "120x120x120 cm x 1",
+   "nature_of_goods": "vaccine vials (2-8 C)",
+   "carrier": "Tarrowby Express Inc.",
+   "tracking_events": []
+  }
+ ]
+}

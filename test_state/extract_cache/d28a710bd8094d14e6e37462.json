@@ -1,0 +1,147 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "batch_01/0026.eml#TX-US-2035-0202.pdf",
+    "page": 1
+   },
+   "quote": "INVOICE TX-US-2035-0202\nInvoice date 2035-03-10 Due date 2035-04-24\nContract reference TBX-US-EXP-01",
+   "invoice_id": "TXUS20350202",
+   "invoice_date": "2035-03-10",
+   "due_date": "2035-04-24",
+   "invoice_total": "683.82",
+   "invoice_currency": "USD",
+   "is_credit_note": false,
+   "is_statement": false,
+   "contract_reference": "TBX-US-EXP-01",
+   "billed_to": "Quillmere Pharma Inc.",
+   "issuer": "Tarrowby Express Inc.",
+   "payment_terms": "net 45 days",
+   "remit_to": "Tarrowby Express Inc., Fenmoor Trust Bank, account 102163192184, SWIFT FENMUS7X",
+   "lines": [
+    {
+     "line_no": 1,
+     "awb": "TX30135782",
+     "pickup_date": "2035-02-06",
+     "lane": "USC3-INS1",
+     "charge_type": "air_freight",
+     "description": "Air freight",
+     "quantity": 19,
+     "unit": "kg",
+     "rate": "4.94",
+     "amount": "93.86",
+     "currency": "USD",
+     "weight_kg": 19
+    },
+    {
+     "line_no": 2,
+     "awb": "TX30135782",
+     "pickup_date": "2035-02-06",
+     "lane": "USC3-INS1",
+     "charge_type": "fuel_surcharge",
+     "description": "Fuel surcharge",
+     "quantity": "93.86",
+     "unit": "USD_base",
+     "rate": "20.53%",
+     "amount": "19.27",
+     "currency": "USD"
+    },
+    {
+     "line_no": 3,
+     "awb": "TX30135782",
+     "pickup_date": "2035-02-06",
+     "lane": "USC3-INS1",
+     "charge_type": "security_surcharge",
+     "description": "Security surcharge",
+     "quantity": 19,
+     "unit": "kg",
+     "rate": "0.12",
+     "amount": "2.28",
+     "currency": "USD",
+     "weight_kg": 19
+    },
+    {
+     "line_no": 4,
+     "awb": "TX30135782",
+     "pickup_date": "2035-02-06",
+     "lane": "USC3-INS1",
+     "charge_type": "storage",
+     "description": "Storage",
+     "quantity": 2,
+     "unit": "days",
+     "rate": "28.88",
+     "amount": "57.76",
+     "currency": "USD"
+    },
+    {
+     "line_no": 5,
+     "awb": "TX30135782",
+     "pickup_date": "2035-02-06",
+     "lane": "USC3-INS1",
+     "charge_type": "delivery_fee",
+     "description": "Delivery fee",
+     "quantity": 1,
+     "unit": "shpt",
+     "rate": "116.13",
+     "amount": "116.13",
+     "currency": "USD"
+    },
+    {
+     "line_no": 6,
+     "awb": "TX67876745",
+     "pickup_date": "2035-03-01",
+     "lane": "USC3-USS2",
+     "charge_type": "air_freight",
+     "description": "Air freight",
+     "quantity": 68,
+     "unit": "kg",
+     "rate": "3.27",
+     "amount": "222.36",
+     "currency": "USD",
+     "weight_kg": 68
+    },
+    {
+     "line_no": 7,
+     "awb": "TX67876745",
+     "pickup_date": "2035-03-01",
+     "lane": "USC3-USS2",
+     "charge_type": "fuel_surcharge",
+     "description": "Fuel surcharge",
+     "quantity": "222.36",
+     "unit": "USD_base",
+     "rate": "21.53%",
+     "amount": "47.87",
+     "currency": "USD"
+    },
+    {
+     "line_no": 8,
+     "awb": "TX67876745",
+     "pickup_date": "2035-03-01",
+     "lane": "USC3-USS2",
+     "charge_type": "security_surcharge",
+     "description": "Security surcharge",
+     "quantity": 68,
+     "unit": "kg",
+     "rate": "0.12",
+     "amount": "8.16",
+     "currency": "USD",
+     "weight_kg": 68
+    },
+    {
+     "line_no": 9,
+     "awb": "TX67876745",
+     "pickup_date": "2035-03-01",
+     "lane": "USC3-USS2",
+     "charge_type": "delivery_fee",
+     "description": "Delivery fee",
+     "quantity": 1,
+     "unit": "shpt",
+     "rate": "116.13",
+     "amount": "116.13",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

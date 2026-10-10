@@ -1,0 +1,93 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "batch_01/0006.eml#TX-US-2034-0383.pdf",
+    "page": 1
+   },
+   "quote": "INVOICE TX-US-2034-0383\nInvoice date 2034-11-26 Due date 2035-01-10\nContract reference TBX-US-EXP-01",
+   "invoice_id": "TXUS20340383",
+   "invoice_date": "2034-11-26",
+   "due_date": "2035-01-10",
+   "contract_reference": "TBX-US-EXP-01",
+   "invoice_total": "1513.18",
+   "invoice_currency": "USD",
+   "is_credit_note": false,
+   "is_statement": false,
+   "billed_to": "Quillmere Pharma Inc.",
+   "billed_from": "Tarrowby Express Inc.",
+   "payment_terms": "net 45 days",
+   "lines": [
+    {
+     "line_no": 1,
+     "awb": "TX45998993",
+     "pickup_date": "2034-11-19",
+     "lane": "USE1-USW2",
+     "charge_type": "air_freight",
+     "description": "Air freight",
+     "quantity": 180,
+     "unit": "kg",
+     "rate": "6.21",
+     "amount": "1117.80",
+     "currency": "USD",
+     "weight_kg": 180
+    },
+    {
+     "line_no": 2,
+     "awb": "TX45998993",
+     "pickup_date": "2034-11-19",
+     "lane": "USE1-USW2",
+     "charge_type": "fuel_surcharge",
+     "description": "Fuel surcharge",
+     "quantity": "1117.80",
+     "unit": "basis (USD)",
+     "rate": "18.38%",
+     "amount": "205.45",
+     "currency": "USD"
+    },
+    {
+     "line_no": 3,
+     "awb": "TX45998993",
+     "pickup_date": "2034-11-19",
+     "lane": "USE1-USW2",
+     "charge_type": "security_surcharge",
+     "description": "Security surcharge",
+     "quantity": 180,
+     "unit": "kg",
+     "rate": "0.12",
+     "amount": "21.60",
+     "currency": "USD",
+     "weight_kg": 180
+    },
+    {
+     "line_no": 4,
+     "awb": "TX45998993",
+     "pickup_date": "2034-11-19",
+     "lane": "USE1-USW2",
+     "charge_type": "peak_season_surcharge",
+     "description": "Peak season surcharge",
+     "quantity": 180,
+     "unit": "kg",
+     "rate": "0.29",
+     "amount": "52.20",
+     "currency": "USD",
+     "weight_kg": 180
+    },
+    {
+     "line_no": 5,
+     "awb": "TX45998993",
+     "pickup_date": "2034-11-19",
+     "lane": "USE1-USW2",
+     "charge_type": "delivery_fee",
+     "description": "Delivery fee",
+     "quantity": 1,
+     "unit": "shpt",
+     "rate": "116.13",
+     "amount": "116.13",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

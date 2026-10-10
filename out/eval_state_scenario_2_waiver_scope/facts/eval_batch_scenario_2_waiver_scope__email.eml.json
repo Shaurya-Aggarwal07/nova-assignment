@@ -1,0 +1,25 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "eval_batch_scenario_2_waiver_scope/email.eml",
+    "page": 1
+   },
+   "quote": "Please waive the detention fee on shipment SHP100.",
+   "event_type": "waiver",
+   "sender_email": "approver@carrier.com",
+   "sender_party": "carrier",
+   "email_date": "2024-01-01",
+   "waiver_scope": {
+    "type": "standing",
+    "description": "detention fee on shipment SHP100",
+    "shipment_ids": [],
+    "charge_types": []
+   },
+   "waiver_scope_type": "single_shipment",
+   "shipment_id": "SHP100",
+   "charge_type": "detention fee"
+  }
+ ]
+}

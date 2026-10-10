@@ -1,0 +1,28 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "eval_batch_scenario_3_duplicate/invoice2.eml",
+    "page": 1
+   },
+   "quote": "Invoice 003B\nContract: C-300\nDate: 2023-05-01\nShipment: AWB999\nAirfreight charge: $500.00",
+   "invoice_id": "003B",
+   "invoice_date": "2023-05-01",
+   "invoice_total": "500.00",
+   "invoice_currency": "USD",
+   "is_credit_note": false,
+   "is_statement": false,
+   "lines": [
+    {
+     "line_no": 1,
+     "awb": "AWB999",
+     "charge_type": "airfreight",
+     "description": "Airfreight charge",
+     "amount": "500.00",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

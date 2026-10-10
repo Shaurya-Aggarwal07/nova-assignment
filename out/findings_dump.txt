@@ -1,0 +1,54 @@
+
+--- duplicate on CDU-3051273 ---
+Amount: 3235.24
+Verdict: finding
+Doc: batch_02/0023.eml#ap-register-2031-02-28.xlsx
+Quote: CDI-2930-0148 | 2030-03-02 | due 2030-04-01 | INR 54710.92 | paid | 2030-03-12
+Doc: batch_01/0017.eml
+Quote: Our records show invoice CDU-3051273 as outstanding. Please process payment at your earliest convenience.
+
+--- overcharge on CDU3051302 ---
+Amount: 695.55
+Verdict: finding
+Doc: batch_02/0005.eml#CDU-3051302.pdf
+Quote: Charges advice CDU-3051302
+Document date 29/09/2030 Payable by 29/10/2030
+Contract CDA-US-EXP-E91 Currency USD
+Doc: batch_02/0001.eml
+Quote: Notice ref. CDA-US-EXP-E91/RN-USE2-USC3-2030-09-15
+
+--- waived_but_billed on CDI-3031-0303 ---
+Amount: 90556.09
+Verdict: finding
+Doc: batch_01/0007.eml
+Quote: Please treat the Delivery fee on AWB CA10343321 as waived. We will not pursue payment of that line.
+Doc: batch_01/0014.eml#CDI-3031-0303.pdf
+Quote: Charges advice CDI-3031-0303
+Document date 12/08/2030 Payable by 11/09/2030
+Contract CDA-IN-EXP-E91 Currency INR
+Doc: batch_01/0003.eml#MSA-CDA-US-EXP-E91.pdf
+Quote: A waiver applies only to the charges and shipments it names. No waiver is a waiver of any later charge, and no course of dealing creates one.
+
+--- waived_but_billed on CDI30310306 ---
+Amount: 127024.44
+Verdict: finding
+Doc: batch_01/0007.eml
+Quote: Please treat the Delivery fee on AWB CA10343321 as waived. We will not pursue payment of that line.
+Doc: batch_02/0016.eml#CDI-3031-0306.pdf
+Quote: Charges advice CDI-3031-0306
+Document date 14/01/2031 Payable by 13/02/2031
+Contract CDA-IN-EXP-E91 Currency INR
+Doc: batch_01/0003.eml#MSA-CDA-US-EXP-E91.pdf
+Quote: A waiver applies only to the charges and shipments it names. No waiver is a waiver of any later charge, and no course of dealing creates one.
+
+--- waived_but_billed on CDU3051259 ---
+Amount: 1135.34
+Verdict: finding
+Doc: batch_01/0007.eml
+Quote: Please treat the Delivery fee on AWB CA10343321 as waived. We will not pursue payment of that line.
+Doc: batch_01/0008.eml#CDU-3051259.pdf
+Quote: Charges advice CDU-3051259
+Document date 15/06/2030 Payable by 15/07/2030
+Contract CDA-US-EXP-E91 Currency USD
+Doc: batch_01/0003.eml#MSA-CDA-US-EXP-E91.pdf
+Quote: A waiver applies only to the charges and shipments it names. No waiver is a waiver of any later charge, and no course of dealing creates one.

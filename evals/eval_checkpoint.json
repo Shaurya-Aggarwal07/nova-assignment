@@ -1,0 +1,47 @@
+{
+  "scenario_1_backdated_amendment": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_2_waiver_scope": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_3_duplicate": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_4_missing_contract": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_5_conflict": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_6_injected_instruction": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_7_clean_but_suspicious": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_8_feedback": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "scenario_9_late_fee_risk": {
+    "status": "PASS",
+    "false_positives": 0,
+    "false_negatives": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "eval_batch_scenario_2_waiver_scope/contract.eml",
+    "page": 1
+   },
+   "quote": "Contract C-200\nDetention fee: $50.00.",
+   "contract_id": "C-200",
+   "surcharges": [
+    {
+     "charge_type": "detention_fee",
+     "rate": "50.00",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

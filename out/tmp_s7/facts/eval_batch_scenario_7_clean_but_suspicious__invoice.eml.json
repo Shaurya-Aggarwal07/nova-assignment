@@ -1,0 +1,27 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "eval_batch_scenario_7_clean_but_suspicious/invoice.eml",
+    "page": 1
+   },
+   "quote": "Invoice 007\nHeavy machinery\nWeight: 10kg\nCharge: $50000.00",
+   "invoice_id": "007",
+   "invoice_date": "2024-01-01",
+   "invoice_currency": "USD",
+   "invoice_total": "50000.00",
+   "is_credit_note": false,
+   "is_statement": false,
+   "lines": [
+    {
+     "line_no": 1,
+     "description": "Heavy machinery",
+     "weight_kg": "10",
+     "amount": "50000.00",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

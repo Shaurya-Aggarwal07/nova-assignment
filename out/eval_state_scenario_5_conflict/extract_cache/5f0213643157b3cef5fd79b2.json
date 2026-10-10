@@ -1,0 +1,38 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "eval_batch_scenario_5_conflict/invoice.eml",
+    "page": 1
+   },
+   "quote": "Invoice 005\nContract: C-500\nLane: BOM-DEL\nWeight: 10kg\nCharge: 150.00 USD",
+   "invoice_id": "INV005",
+   "invoice_date": "2024-01-01",
+   "invoice_currency": "USD",
+   "invoice_total": "150.00",
+   "is_credit_note": false,
+   "is_statement": false,
+   "lines": [
+    {
+     "lane": "BOM-DEL",
+     "charge_type": "freight",
+     "description": "Charge",
+     "amount": "150.00",
+     "currency": "USD",
+     "weight_kg": 10
+    }
+   ]
+  },
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "eval_batch_scenario_5_conflict/invoice.eml",
+    "page": 1
+   },
+   "quote": "Subject: Invoice 005",
+   "event_type": "other",
+   "email_date": "2024-01-01"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "facts": [
+  {
+   "fact_type": "shipment_record",
+   "source": {
+    "doc_ref": "batch_01/0013.eml#AWB-TX80427576.pdf",
+    "page": 1
+   },
+   "quote": "AIR WAYBILL TX80427576\nExecuted on 2035-01-15 at USE1\nOrigin USE1 | Destination USW2",
+   "awb": "TX80427576",
+   "carrier": "Tarrowby Express Inc.",
+   "executed_date": "2035-01-15",
+   "origin": "USE1",
+   "destination": "USW2",
+   "pieces": 6,
+   "actual_weight_kg": "350.8",
+   "chargeable_weight_kg": "351",
+   "dimensions_cm": "59x59x59 cm x 6",
+   "nature_of_goods": "clinical trial samples",
+   "tracking_events": []
+  }
+ ]
+}

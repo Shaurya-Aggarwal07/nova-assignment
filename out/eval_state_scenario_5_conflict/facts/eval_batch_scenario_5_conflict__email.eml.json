@@ -1,0 +1,34 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "eval_batch_scenario_5_conflict/email.eml",
+    "page": 1
+   },
+   "event_type": "rate_notice",
+   "sender_email": "VP_Sales@carrier.com",
+   "sender_party": "carrier",
+   "email_date": "2024-01-01",
+   "quote": "Rate notice for Contract C-500. Rate for BOM-DEL is 15.00 USD per kg."
+  },
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "eval_batch_scenario_5_conflict/email.eml",
+    "page": 1
+   },
+   "contract_id": "C-500",
+   "currency": "USD",
+   "rates": [
+    {
+     "lane": "BOM-DEL",
+     "rate": "15.00",
+     "unit": "kg",
+     "currency": "USD"
+    }
+   ],
+   "quote": "Rate for BOM-DEL is 15.00 USD per kg."
+  }
+ ]
+}

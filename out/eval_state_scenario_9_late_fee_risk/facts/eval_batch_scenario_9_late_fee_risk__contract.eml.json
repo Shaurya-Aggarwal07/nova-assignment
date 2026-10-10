@@ -1,0 +1,15 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "contract_id": "C-900",
+   "payment_terms_days": 30,
+   "late_fee_rate_pct": "2",
+   "source": {
+    "doc_ref": "eval_batch_scenario_9_late_fee_risk/contract.eml",
+    "page": 1
+   },
+   "quote": "Contract C-900\nPayment terms: 30 days from invoice date.\nLate fee: 2%"
+  }
+ ]
+}

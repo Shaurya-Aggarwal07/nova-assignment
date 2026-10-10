@@ -1,0 +1,117 @@
+{
+ "sheet_version": "1.0",
+ "as_of": "2031-02-28",
+ "mode": "supervised",
+ "source": "exam_report.json",
+ "totals": {
+  "total_overpayment": "406227.12",
+  "cashback_owed": "0.00",
+  "late_fees_avoided": "0.00",
+  "total_savings": "406227.12"
+ },
+ "classes": {
+  "overcharge": {
+   "count": 1,
+   "amount_usd": "695.55",
+   "ids": [
+    "CDU3051302"
+   ],
+   "amounts_by_id": {
+    "CDU3051302": "695.55"
+   }
+  },
+  "duplicate": {
+   "count": 1,
+   "amount_usd": "3235.24",
+   "ids": [
+    "CDU-3051273"
+   ],
+   "amounts_by_id": {
+    "CDU-3051273": "3235.24"
+   }
+  },
+  "waived_but_billed": {
+   "count": 23,
+   "amount_usd": "402296.33",
+   "ids": [
+    "CDI-3031-0303",
+    "CDI30310306",
+    "CDU3051259",
+    "CDU3051262",
+    "CDU3051266",
+    "CDU3051268",
+    "CDU3051273",
+    "CDU3051277",
+    "CDU3051286",
+    "CDU3051292",
+    "CDU3051297",
+    "CDU3051302",
+    "CDU3051304",
+    "CDU3051313",
+    "CDU3051319",
+    "CDU3051323",
+    "CDU3051329",
+    "CDU3051334",
+    "CDU3051342",
+    "CDU3151556",
+    "CDU3151564",
+    "CDU3151571",
+    "CDU3151580"
+   ],
+   "amounts_by_id": {
+    "CDI-3031-0303": "90556.09",
+    "CDI30310306": "127024.44",
+    "CDU3051259": "1135.34",
+    "CDU3051262": "1448.48",
+    "CDU3051266": "4869.03",
+    "CDU3051268": "49988.69",
+    "CDU3051273": "3235.24",
+    "CDU3051277": "374.41",
+    "CDU3051286": "1655.21",
+    "CDU3051292": "29223.67",
+    "CDU3051297": "921.66",
+    "CDU3051302": "769.53",
+    "CDU3051304": "448.15",
+    "CDU3051313": "768.95",
+    "CDU3051319": "3910.36",
+    "CDU3051323": "5619.37",
+    "CDU3051329": "52963.06",
+    "CDU3051334": "528.14",
+    "CDU3051342": "17714.72",
+    "CDU3151556": "4993.40",
+    "CDU3151564": "3118.00",
+    "CDU3151571": "690.34",
+    "CDU3151580": "340.05"
+   }
+  },
+  "late_fee_not_owed": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {}
+  },
+  "cashback": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {}
+  },
+  "late_fee_risk": {
+   "count": 0,
+   "amount_usd": "0.00",
+   "ids": [],
+   "amounts_by_id": {},
+   "deadlines_by_id": {}
+  },
+  "expiry": {
+   "count": 0,
+   "amount_usd": null,
+   "ids": [],
+   "amounts_by_id": {},
+   "deadlines_by_id": {}
+  }
+ },
+ "conflicts": [],
+ "cannot_determine": [],
+ "mailbox": "exam"
+}

@@ -1,0 +1,18 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0003.eml",
+    "page": 1
+   },
+   "event_type": "document_request",
+   "sender_name": "Isolde Pembroke",
+   "sender_email": "isolde.pembroke@quillmere.example",
+   "sender_party": "Quillmere Pharma Inc.",
+   "email_date": "2034-11-19",
+   "author": "Isolde Pembroke",
+   "quote": "Could you check the Delivery fee on AWB TX45998993? We did not expect it on this shipment."
+  }
+ ]
+}

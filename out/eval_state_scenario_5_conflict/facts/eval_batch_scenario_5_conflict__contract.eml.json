@@ -1,0 +1,32 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "eval_batch_scenario_5_conflict/contract.eml",
+    "page": 1
+   },
+   "quote": "Contract C-500\nBase rate for BOM-DEL is 10.00 USD per kg.",
+   "contract_id": "C-500",
+   "currency": "USD",
+   "rates": [
+    {
+     "lane": "BOM-DEL",
+     "rate": "10.00",
+     "unit": "per kg",
+     "currency": "USD"
+    }
+   ],
+   "schedule_1_contacts": [
+    {
+     "name": "VP Sales",
+     "email": "VP_Sales@carrier.com",
+     "categories": [
+      "rates",
+      "pricing"
+     ]
+    }
+   ]
+  }
+ ]
+}

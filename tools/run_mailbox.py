@@ -15,6 +15,8 @@ import shlex
 import shutil
 import subprocess
 import sys
+import time
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,7 +47,7 @@ def batch_dates(data: Path) -> dict[str, str]:
     return {b["batch"]: b["as_of"] for b in json.loads(f.read_text())["batches"]}
 
 
-def run(harness: str, mailbox: Path, as_of: str, mode: str, state: Path, timeout: float = 600.0,
+def run(harness: str, mailbox: Path, as_of: str, mode: str, state: Path, timeout: float = 1200.0,
         feedback: dict[str, Path] | None = None, log=print) -> tuple[dict | None, list[str]]:
     """Fresh state, ingest every batch (feedback after the batches it names), one report. -> (report, errors)."""
     cmd = harness_cmd(harness)
@@ -57,7 +59,11 @@ def run(harness: str, mailbox: Path, as_of: str, mode: str, state: Path, timeout
     if not batches:
         return None, [f"no batch_* folders in {mailbox}"]
     for b in batches:
+        print(f"[{datetime.now().isoformat()}] ingest {b.name} started")
+        t0 = time.time()
         rc, _, err = step(cmd, ["ingest", str(b), "--state-dir", str(state)], timeout)
+        elapsed = round(time.time() - t0, 1)
+        print(f"[{datetime.now().isoformat()}] ingest {b.name} completed (total elapsed: {elapsed}s)")
         log(f"  ingest {b.name}: exit {rc}")
         if rc != 0:
             errors.append(f"ingest {b.name} exited {rc}: {err.strip()[-400:]}")
@@ -88,7 +94,7 @@ def main(argv=None) -> int:
     ap.add_argument("--out", required=True, help="where to write the report.json")
     ap.add_argument("--sheet", help="also write the answer sheet here")
     ap.add_argument("--state-dir", help="default: out/state_<mailbox name>")
-    ap.add_argument("--timeout", type=float, default=600.0, help="seconds per step")
+    ap.add_argument("--timeout", type=float, default=1200.0, help="seconds per step")
     a = ap.parse_args(argv)
     data = Path(a.data)
     dates = batch_dates(data)

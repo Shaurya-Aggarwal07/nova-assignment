@@ -1,0 +1,106 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "batch_01/0022.eml#TX-US-2035-0198.pdf",
+    "page": 1
+   },
+   "quote": "INVOICE TX-US-2035-0198\nInvoice date 2035-03-03 Due date 2035-04-17\nContract reference TBX-US-EXP-01",
+   "invoice_id": "TXUS20350198",
+   "invoice_date": "2035-03-03",
+   "due_date": "2035-04-17",
+   "contract_reference": "TBX-US-EXP-01",
+   "invoice_total": "965.82",
+   "invoice_currency": "USD",
+   "is_credit_note": false,
+   "is_statement": false,
+   "billed_to": "Quillmere Pharma Inc., 315 Linden Parade, Suite 775, Fallowmere 26170, USA",
+   "billed_by": "Tarrowby Express Inc., 214 Merrow Road, Suite 671, Fallowmere 20905, USA",
+   "payment_terms_days": 45,
+   "remit_to": "Tarrowby Express Inc., Fenmoor Trust Bank, account 102163192184, SWIFT FENMUS7X",
+   "lines": [
+    {
+     "line_no": 1,
+     "awb": "TX64694457",
+     "pickup_date": "2035-02-24",
+     "lane": "USS2-INW2",
+     "charge_type": "air_freight",
+     "description": "Air freight",
+     "quantity": "192",
+     "unit": "kg",
+     "rate": "2.84",
+     "amount": "545.28",
+     "currency": "USD",
+     "weight_kg": "192"
+    },
+    {
+     "line_no": 2,
+     "awb": "TX64694457",
+     "pickup_date": "2035-02-24",
+     "lane": "USS2-INW2",
+     "charge_type": "fuel_surcharge",
+     "description": "Fuel surcharge",
+     "quantity": "545.28",
+     "unit": "USD_basis",
+     "rate": "20.53%",
+     "amount": "111.95",
+     "currency": "USD"
+    },
+    {
+     "line_no": 3,
+     "awb": "TX64694457",
+     "pickup_date": "2035-02-24",
+     "lane": "USS2-INW2",
+     "charge_type": "security_surcharge",
+     "description": "Security surcharge",
+     "quantity": "192",
+     "unit": "kg",
+     "rate": "0.12",
+     "amount": "23.04",
+     "currency": "USD",
+     "weight_kg": "192"
+    },
+    {
+     "line_no": 4,
+     "awb": "TX64694457",
+     "pickup_date": "2035-02-24",
+     "lane": "USS2-INW2",
+     "charge_type": "dry_ice_handling",
+     "description": "Dry ice handling fee",
+     "quantity": "1",
+     "unit": "shpt",
+     "rate": "45.40",
+     "amount": "45.40",
+     "currency": "USD"
+    },
+    {
+     "line_no": 5,
+     "awb": "TX64694457",
+     "pickup_date": "2035-02-24",
+     "lane": "USS2-INW2",
+     "charge_type": "dg_handling",
+     "description": "DG handling",
+     "quantity": "1",
+     "unit": "shpt",
+     "rate": "124.02",
+     "amount": "124.02",
+     "currency": "USD"
+    },
+    {
+     "line_no": 6,
+     "awb": "TX64694457",
+     "pickup_date": "2035-02-24",
+     "lane": "USS2-INW2",
+     "charge_type": "delivery_fee",
+     "description": "Delivery fee",
+     "quantity": "1",
+     "unit": "shpt",
+     "rate": "116.13",
+     "amount": "116.13",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

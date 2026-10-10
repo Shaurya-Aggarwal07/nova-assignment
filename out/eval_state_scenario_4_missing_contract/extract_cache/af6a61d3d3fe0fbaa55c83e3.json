@@ -1,0 +1,27 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "eval_batch_scenario_4_missing_contract/invoice.eml",
+    "page": 1
+   },
+   "quote": "Invoice 004\nDate 2024-02-01\nBase freight: $1000.00",
+   "invoice_id": "INV004",
+   "invoice_date": "2024-02-01",
+   "invoice_total": "1000.00",
+   "invoice_currency": "USD",
+   "is_credit_note": false,
+   "is_statement": false,
+   "lines": [
+    {
+     "line_no": 1,
+     "charge_type": "base_freight",
+     "description": "Base freight",
+     "amount": "1000.00",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "facts": [
+  {
+   "fact_type": "amendment",
+   "source": {
+    "doc_ref": "batch_01/0002.eml#TBX-US-EXP-01-AMD-1.pdf",
+    "page": 1
+   },
+   "quote": "Amendment reference TBX-US-EXP-01/AMD-1\nEffective from 2034-11-11",
+   "amendment_id": "TBX-US-EXP-01/AMD-1",
+   "amends_contract": "TBX-US-EXP-01",
+   "effective_date": "2034-11-11",
+   "author": "Rupert Stavros (Shipper) / Wilhelmina Montague (Carrier)",
+   "changes": [
+    {
+     "field": "rate",
+     "lane": "USC3-USS2",
+     "new_value": "minimum charge: 82.82 USD; 0-44.5 kg: 3.43 USD/kg; 45-99.5 kg: 3.27 USD/kg; 100-299.5 kg: 3.12 USD/kg; 300+ kg: 2.97 USD/kg",
+     "note": "Annex A rates for lane USC3-USS2 deleted and replaced for every period from 2034-11-11"
+    },
+    {
+     "field": "rate",
+     "lane": "USS2-INN1",
+     "new_value": "Annex A rev 2 (attached) applies from 2035-06-04",
+     "note": "Annex A rates for lane USS2-INN1 deleted and replaced; Annex A rev 2 governs from 2035-06-04"
+    }
+   ],
+   "rates": [
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "minimum charge",
+     "rate": "82.82",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "0-44.5 kg",
+     "rate": "3.43",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "45-99.5 kg",
+     "rate": "3.27",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "100-299.5 kg",
+     "rate": "3.12",
+     "currency": "USD"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "300+ kg",
+     "rate": "2.97",
+     "currency": "USD"
+    },
+    {
+     "lane": "USS2-INN1",
+     "weight_band": "all",
+     "rate": "see Annex A rev 2",
+     "effective_date": "2035-06-04",
+     "currency": "USD"
+    }
+   ],
+   "signatories": [
+    {
+     "party": "Shipper",
+     "name": "Rupert Stavros",
+     "title": "VP Procurement",
+     "sign_date": "2034-11-09"
+    },
+    {
+     "party": "Carrier",
+     "name": "Wilhelmina Montague",
+     "title": "VP Sales",
+     "sign_date": "2034-11-09"
+    }
+   ],
+   "precedence_clause": "All other terms of the Agreement are unchanged.",
+   "note_authority": "Schedule 1 governs Authorised Persons for rates, waivers, payment terms and notices."
+  }
+ ]
+}

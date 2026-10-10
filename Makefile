@@ -1,9 +1,13 @@
 # Nova take-home. `make help` lists the targets.
 # Every target runs in .venv (made by `make setup`). HARNESS points at your harness; MODE is supervised, autonomous
 # or both (the default for make grade).
-PY      ?= .venv/bin/python
+PYTHON  ?= $(if $(OS),$(if $(filter Windows_NT,$(OS)),.venv/Scripts/python.exe,.venv/bin/python),.venv/bin/python)
+PY      ?= $(PYTHON)
 HARNESS ?= harness/harness.py
 MODE    ?= both
+
+export PYTHONUTF8 = 1
+export PYTHONIOENCODING = utf-8
 
 .PHONY: help setup venv run grade sheet eval validate clean
 help:
@@ -16,31 +20,31 @@ help:
 
 setup:
 	@if command -v uv >/dev/null 2>&1; then \
-		uv venv -q --allow-existing --python ">=3.11" .venv && uv pip install -q --python .venv/bin/python -r harness/requirements.txt; \
+		uv venv -q --allow-existing --python ">=3.11" .venv && uv pip install -q --python $(PYTHON) -r harness/requirements.txt; \
 	else \
 		python3 -c 'import sys; sys.exit(sys.version_info < (3, 11))' || { echo "need Python 3.11 or newer"; exit 2; }; \
-		python3 -m venv .venv && .venv/bin/pip install -q -r harness/requirements.txt; \
+		python3 -m venv .venv && $(PYTHON) -m pip install -q -r harness/requirements.txt; \
 	fi
-	@$(PY) -c "import pymupdf, openpyxl, jsonschema, yaml" && echo "setup done. Next: write harness/harness.py, then make grade"
+	@$(PYTHON) -c "import pymupdf, openpyxl, jsonschema, yaml" && echo "setup done. Next: write harness/harness.py, then make grade"
 
 venv:
-	@test -x "$(PY)" || command -v "$(PY)" >/dev/null 2>&1 || { echo "no $(PY) yet: run make setup first"; exit 2; }
+	@test -x "$(PYTHON)" || test -f "$(PYTHON)" || command -v "$(PYTHON)" >/dev/null 2>&1 || { echo "no $(PYTHON) yet: run make setup first"; exit 2; }
 
 run: venv
-	$(PY) tools/run_mailbox.py --data data/scenarios --harness $(HARNESS) --out out/practice_report.json
+	$(PYTHON) tools/run_mailbox.py --data data/scenarios --harness $(HARNESS) --out out/practice_report.json
 
 grade: venv
-	@$(PY) grader/run_grader.py --harness "python $(HARNESS)" --data data/scenarios --key data/scenarios/answers \
+	@$(PYTHON) grader/run_grader.py --harness "python $(HARNESS)" --data data/scenarios --key data/scenarios/answers \
 		--mode $(MODE) --out report_card.json > report_card.txt; rc=$$?; cat report_card.txt; exit $$rc
 
 sheet: venv
-	$(PY) tools/run_mailbox.py --data data/exam --harness $(HARNESS) --out out/exam_report.json --sheet answer_sheet.json
+	$(PYTHON) tools/run_mailbox.py --data data/exam --harness $(HARNESS) --out out/exam_report.json --sheet answer_sheet.json
 
 eval: venv
-	$(PY) evals/run_evals.py --harness $(HARNESS) $(if $(K),-k $(K),)
+	$(PYTHON) evals/run_evals.py --harness $(HARNESS) $(if $(K),-k $(K),)
 
 validate: venv
-	@$(PY) tools/check_submission.py --harness $(HARNESS)
+	@$(PYTHON) tools/check_submission.py --harness $(HARNESS)
 
 clean:
 	rm -rf out/state_* .state

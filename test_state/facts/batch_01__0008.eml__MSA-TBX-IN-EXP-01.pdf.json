@@ -1,0 +1,579 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "batch_01/0008.eml#MSA-TBX-IN-EXP-01.pdf",
+    "page": 1
+   },
+   "quote": "Agreement No. TBX-IN-EXP-01 between Quillmere Pharma India Pvt. Ltd. ... and Tarrowby Express India Pvt. Ltd. ... Dated 2034-12-29",
+   "contract_id": "TBX-IN-EXP-01",
+   "effective_date": "2035-01-06",
+   "end_date": "2036-01-05",
+   "auto_renew": false,
+   "notice_days": 90,
+   "currency": "INR",
+   "payment_terms_days": 45,
+   "grace_days": 5,
+   "late_fee_rate_pct": "1.09",
+   "late_fee_compounds": true,
+   "precedence_clause": "Signed amendment > this Agreement > Annexes. Between amendments, the later effective date prevails for the terms it changes.",
+   "waiver_clause": "A charge may be waived only in writing by a person listed in Schedule 1 for waivers. Schedule 1 is exhaustive. A waiver applies only to the charges and shipments it names. No waiver is a waiver of any later charge, and no course of dealing creates one.",
+   "rates": [
+    {
+     "lane": "INS2-USS2",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "8088.00",
+     "p2_rate_inr": "8088.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INS2-USS2",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "657.92",
+     "p2_rate_inr": "710.14",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INS2-USS2",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "610.53",
+     "p2_rate_inr": "658.99",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INS2-USS2",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "566.56",
+     "p2_rate_inr": "611.53",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INS2-USS2",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "525.75",
+     "p2_rate_inr": "567.48",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC3",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "7730.00",
+     "p2_rate_inr": "7730.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INN3-USC3",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "654.89",
+     "p2_rate_inr": "706.87",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC3",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "590.87",
+     "p2_rate_inr": "637.77",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC3",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "533.11",
+     "p2_rate_inr": "575.42",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC3",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "480.99",
+     "p2_rate_inr": "519.17",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW1-USE1",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "7882.00",
+     "p2_rate_inr": "7882.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INW1-USE1",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "705.78",
+     "p2_rate_inr": "761.80",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW1-USE1",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "663.25",
+     "p2_rate_inr": "715.89",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW1-USE1",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "623.28",
+     "p2_rate_inr": "672.75",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW1-USE1",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "585.72",
+     "p2_rate_inr": "632.21",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC1",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "5514.00",
+     "p2_rate_inr": "5514.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INN3-USC1",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "349.08",
+     "p2_rate_inr": "376.79",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC1",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "310.58",
+     "p2_rate_inr": "335.23",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC1",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "276.33",
+     "p2_rate_inr": "298.26",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USC1",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "245.85",
+     "p2_rate_inr": "265.37",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN1-USC3",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "3921.00",
+     "p2_rate_inr": "3921.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INN1-USC3",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "589.22",
+     "p2_rate_inr": "635.99",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN1-USC3",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "536.27",
+     "p2_rate_inr": "578.84",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN1-USC3",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "488.08",
+     "p2_rate_inr": "526.82",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN1-USC3",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "444.22",
+     "p2_rate_inr": "479.48",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-INW2",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "4552.00",
+     "p2_rate_inr": "4552.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INN3-INW2",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "289.26",
+     "p2_rate_inr": "312.22",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-INW2",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "273.45",
+     "p2_rate_inr": "295.15",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-INW2",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "258.50",
+     "p2_rate_inr": "279.02",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-INW2",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "244.37",
+     "p2_rate_inr": "263.76",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USW2",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "6628.00",
+     "p2_rate_inr": "6628.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INN3-USW2",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "355.22",
+     "p2_rate_inr": "383.42",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USW2",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "340.63",
+     "p2_rate_inr": "367.67",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USW2",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "326.64",
+     "p2_rate_inr": "352.57",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INN3-USW2",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "313.23",
+     "p2_rate_inr": "338.09",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW2-INS1",
+     "weight_band": "minimum charge",
+     "p1_rate_inr": "4163.00",
+     "p2_rate_inr": "4163.00",
+     "unit": "INR per shipment"
+    },
+    {
+     "lane": "INW2-INS1",
+     "weight_band": "0-44.5 kg",
+     "p1_rate_inr": "446.54",
+     "p2_rate_inr": "481.99",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW2-INS1",
+     "weight_band": "45-99.5 kg",
+     "p1_rate_inr": "427.21",
+     "p2_rate_inr": "461.12",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW2-INS1",
+     "weight_band": "100-299.5 kg",
+     "p1_rate_inr": "408.71",
+     "p2_rate_inr": "441.16",
+     "unit": "INR per chargeable kg"
+    },
+    {
+     "lane": "INW2-INS1",
+     "weight_band": "300+ kg",
+     "p1_rate_inr": "391.02",
+     "p2_rate_inr": "422.06",
+     "unit": "INR per chargeable kg"
+    }
+   ],
+   "surcharges": [
+    {
+     "code": "FUEL",
+     "description": "Fuel surcharge – percentage of base freight only; does not apply to accessorials or security surcharge",
+     "basis": "month of Pickup Date",
+     "schedule": [
+      {
+       "month": "2035-01",
+       "rate_pct": "18.48"
+      },
+      {
+       "month": "2035-02",
+       "rate_pct": "17.44"
+      },
+      {
+       "month": "2035-03",
+       "rate_pct": "18.92"
+      },
+      {
+       "month": "2035-04",
+       "rate_pct": "18.02"
+      },
+      {
+       "month": "2035-05",
+       "rate_pct": "17.32"
+      },
+      {
+       "month": "2035-06",
+       "rate_pct": "19.34"
+      },
+      {
+       "month": "2035-07",
+       "rate_pct": "18.16"
+      },
+      {
+       "month": "2035-08",
+       "rate_pct": "17.06"
+      },
+      {
+       "month": "2035-09",
+       "rate_pct": "15.25"
+      },
+      {
+       "month": "2035-10",
+       "rate_pct": "14.50"
+      },
+      {
+       "month": "2035-11",
+       "rate_pct": "16.90"
+      },
+      {
+       "month": "2035-12",
+       "rate_pct": "14.96"
+      },
+      {
+       "month": "2036-01",
+       "rate_pct": "17.25"
+      }
+     ]
+    },
+    {
+     "code": "SEC",
+     "description": "Security surcharge",
+     "rate": "19.71",
+     "currency": "INR",
+     "basis": "per chargeable kg"
+    },
+    {
+     "code": "DG",
+     "description": "Dangerous goods fee",
+     "rate": "15305.00",
+     "currency": "INR",
+     "basis": "per shipment"
+    },
+    {
+     "code": "DRYICE",
+     "description": "Dry ice handling fee",
+     "rate": "2901.00",
+     "currency": "INR",
+     "basis": "per shipment"
+    },
+    {
+     "code": "STOR",
+     "description": "Storage (after 3 free days)",
+     "rate": "1634.00",
+     "currency": "INR",
+     "basis": "per storage day"
+    },
+    {
+     "code": "DLV",
+     "description": "Delivery fee",
+     "rate": "6149.00",
+     "currency": "INR",
+     "basis": "per shipment"
+    },
+    {
+     "code": "CUSTOMS",
+     "description": "Customs hold fee",
+     "rate": "15002.00",
+     "currency": "INR",
+     "basis": "per shipment"
+    },
+    {
+     "code": "ACCT",
+     "description": "Monthly account fee",
+     "rate": "14438.00",
+     "currency": "INR",
+     "basis": "per month"
+    },
+    {
+     "code": "SPROG",
+     "description": "Storage programme fee",
+     "rate": "59374.00",
+     "currency": "INR",
+     "basis": "per month"
+    },
+    {
+     "code": "PPROG",
+     "description": "Pickup programme fee",
+     "rate": "28927.00",
+     "currency": "INR",
+     "basis": "per month"
+    }
+   ],
+   "fx_rates": [
+    {
+     "month": "2035-01",
+     "inr_per_usd": "78.84"
+    },
+    {
+     "month": "2035-02",
+     "inr_per_usd": "78.56"
+    },
+    {
+     "month": "2035-03",
+     "inr_per_usd": "78.71"
+    },
+    {
+     "month": "2035-04",
+     "inr_per_usd": "78.68"
+    },
+    {
+     "month": "2035-05",
+     "inr_per_usd": "79.78"
+    },
+    {
+     "month": "2035-06",
+     "inr_per_usd": "79.82"
+    },
+    {
+     "month": "2035-07",
+     "inr_per_usd": "80.35"
+    },
+    {
+     "month": "2035-08",
+     "inr_per_usd": "79.31"
+    },
+    {
+     "month": "2035-09",
+     "inr_per_usd": "80.32"
+    },
+    {
+     "month": "2035-10",
+     "inr_per_usd": "79.56"
+    },
+    {
+     "month": "2035-11",
+     "inr_per_usd": "79.37"
+    },
+    {
+     "month": "2035-12",
+     "inr_per_usd": "78.55"
+    },
+    {
+     "month": "2036-01",
+     "inr_per_usd": "79.15"
+    }
+   ],
+   "rebate_tiers": [
+    {
+     "threshold_usd_per_quarter": "76000.00",
+     "rate_pct": "5.0",
+     "applies_to": "all QS in the Quarter"
+    },
+    {
+     "threshold_usd_per_quarter": "125000.00",
+     "rate_pct": "7.5",
+     "applies_to": "all QS in the Quarter"
+    },
+    {
+     "threshold_usd_per_quarter": "220000.00",
+     "rate_pct": "10.0",
+     "applies_to": "all QS in the Quarter"
+    }
+   ],
+   "rebate_credit_note_deadline_days": 45,
+   "margin_step_down": "Not applicable to this Agreement.",
+   "promised_credits": [
+    {
+     "description": "Annual improvement credit – 1.00% of prior Contract Year's Qualifying Spend",
+     "rate_pct": "1.00",
+     "issuance_deadline_days_after_anniversary": 60
+    }
+   ],
+   "schedule_1_contacts": [
+    {
+     "name": "Lena Zeller",
+     "title": "Key Account Manager",
+     "party": "TBX-IN",
+     "categories": [
+      "notices"
+     ],
+     "email": "lena.zeller@tarrowby.example"
+    },
+    {
+     "name": "Tobias Garside",
+     "title": "Pricing Manager",
+     "party": "TBX-IN",
+     "categories": [
+      "rates"
+     ],
+     "email": "tobias.garside@tarrowby.example"
+    },
+    {
+     "name": "Keira Vanterpool",
+     "title": "Customer Finance Lead",
+     "party": "TBX-IN",
+     "categories": [
+      "waivers",
+      "payment_terms"
+     ],
+     "email": "keira.vanterpool@tarrowby.example"
+    },
+    {
+     "name": "Elspeth Ashdown",
+     "title": "Treasury Analyst",
+     "party": "TBX-IN",
+     "categories": [
+      "treasury"
+     ],
+     "email": "elspeth.ashdown@tarrowby.example"
+    },
+    {
+     "name": "Ilse Quigley",
+     "title": "Billing Disputes Lead",
+     "party": "TBX-IN",
+     "categories": [
+      "billing_disputes"
+     ],
+     "email": "ilse.quigley@tarrowby.example"
+    },
+    {
+     "name": "Pallavi Larkin",
+     "title": "AP Manager",
+     "party": "QMP-IN",
+     "categories": [
+      "notices",
+      "payment_terms",
+      "billing_disputes"
+     ],
+     "email": "pallavi.larkin@quillmere.example"
+    },
+    {
+     "name": "Yara Gallacher",
+     "title": "Logistics Director",
+     "party": "QMP-IN",
+     "categories": [
+      "rates"
+     ],
+     "email": "yara.gallacher@quillmere.example"
+    }
+   ],
+   "author": "Cormac Inglethorpe (Shipper, VP Procurement) / Marisol Blackwood (Carrier, General Manager)"
+  }
+ ]
+}

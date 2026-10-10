@@ -1,0 +1,57 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "batch_01/0007.eml#TX-ST-203411.xlsx",
+    "page": 1
+   },
+   "quote": "STATEMENT OF ACCOUNT TX-ST-203411\nStatement date 2034-12-01 | Due date 2035-01-15\nBill to Quillmere Pharma Inc.",
+   "invoice_id": "TXST203411",
+   "invoice_date": "2034-12-01",
+   "invoice_total": "1426.50",
+   "invoice_currency": "USD",
+   "is_credit_note": false,
+   "is_statement": true,
+   "contract_reference": "TBX-US-EXP-01",
+   "due_date": "2035-01-15",
+   "billed_to": "Quillmere Pharma Inc.",
+   "issuer": "Tarrowby Express Inc.",
+   "lines": [
+    {
+     "line_no": 1,
+     "charge_type": "Monthly account fee",
+     "description": "Monthly account fee",
+     "quantity": 1,
+     "unit": "month",
+     "rate": "350.28",
+     "amount": "350.28",
+     "currency": "USD",
+     "period": "2034-11"
+    },
+    {
+     "line_no": 2,
+     "charge_type": "Storage programme fee",
+     "description": "Storage programme fee",
+     "quantity": 1,
+     "unit": "month",
+     "rate": "678.00",
+     "amount": "678.00",
+     "currency": "USD",
+     "period": "2034-11"
+    },
+    {
+     "line_no": 3,
+     "charge_type": "Pickup programme fee",
+     "description": "Pickup programme fee",
+     "quantity": 1,
+     "unit": "month",
+     "rate": "398.22",
+     "amount": "398.22",
+     "currency": "USD",
+     "period": "2034-11"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "facts": [
+  {
+   "fact_type": "invoice",
+   "source": {
+    "doc_ref": "eval_batch_scenario_8_feedback/invoice1.eml",
+    "page": 1
+   },
+   "quote": "Invoice CDU-008A\nContract: C-800\nShipment: SHP123\nAmount: 100.00 USD",
+   "invoice_id": "CDU008A",
+   "invoice_date": "2024-01-01",
+   "invoice_total": "100.00",
+   "invoice_currency": "USD",
+   "is_credit_note": false,
+   "is_statement": false,
+   "lines": [
+    {
+     "line_no": 1,
+     "shipment_id": "SHP123",
+     "amount": "100.00",
+     "currency": "USD"
+    }
+   ]
+  }
+ ]
+}

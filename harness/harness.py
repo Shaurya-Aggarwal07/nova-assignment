@@ -16,25 +16,219 @@ checks them. Replace the NotImplementedError bodies with your code.
 from __future__ import annotations
 
 import argparse
+import json
+import os
 import sys
+from pathlib import Path
 
 DEFAULT_STATE = ".state"
 
 
 def ingest(batch_dir: str, state_dir: str) -> None:
-    raise NotImplementedError(
-        f"ingest is not written yet: read the .eml files in {batch_dir} and keep what you learn under {state_dir}")
+    """Read every .eml in *batch_dir*, extract structured facts via Claude,
+    and persist them under *state_dir*.  Cached documents are skipped.
+    """
+    # Lazy imports so the top-level parse is fast and other subcommands
+    # don't pay the import cost.
+    # NOTE: reader.py puts grader/ on sys.path, so a bare `import extract`
+    # would pick up grader/extract.py.  We load harness/extract.py explicitly.
+    import importlib.util
+    _harness_dir = Path(__file__).resolve().parent
+
+    # Import harness/reader.py
+    sys.path.insert(0, str(_harness_dir))
+    from reader import read_batch                        # noqa: E402
+
+    # Import harness/extract.py by file path to avoid the grader collision
+    _ext_spec = importlib.util.spec_from_file_location(
+        "harness_extract", str(_harness_dir / "extract.py")
+    )
+    _ext_mod = importlib.util.module_from_spec(_ext_spec)
+    _ext_spec.loader.exec_module(_ext_mod)
+    extract_facts_from_doc = _ext_mod.extract_facts_from_doc
+    reader_results_to_extract_inputs = _ext_mod.reader_results_to_extract_inputs
+    extract_batch = _ext_mod.extract_batch
+    _get_client = _ext_mod._get_client
+
+    # Load API key from .env.local if not already in the environment
+    _repo_root = _harness_dir.parent
+    _env_file = _repo_root / ".env.local"
+    if not os.environ.get("ANTHROPIC_API_KEY") and _env_file.exists():
+        for line in _env_file.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            # Support both "VAR=value" and bare "value" (just the key)
+            if "=" in line:
+                key, _, val = line.partition("=")
+                os.environ.setdefault(key.strip(), val.strip())
+            elif line.startswith("sk-"):
+                # Bare API key on its own line
+                os.environ.setdefault("ANTHROPIC_API_KEY", line)
+
+    batch_path = Path(batch_dir)
+    if not batch_path.is_dir():
+        print(f"Error: {batch_dir} is not a directory", file=sys.stderr)
+        sys.exit(1)
+
+    # Ensure state dirs exist
+    facts_dir = Path(state_dir) / "facts"
+    facts_dir.mkdir(parents=True, exist_ok=True)
+
+    # 1. Read all .eml files → ReadResults
+    print(f"Reading .eml files from {batch_dir} ...")
+    read_results_map = read_batch(batch_path, state_dir=state_dir)
+
+    # Flatten into a single list of ReadResults
+    all_read_results: list = []
+    for rrs in read_results_map.values():
+        all_read_results.extend(rrs)
+
+    # 2. Convert to extract inputs: (doc_ref, [(page, text), ...])
+    extract_inputs = reader_results_to_extract_inputs(all_read_results)
+    total_docs = len(extract_inputs)
+
+    # 3. Extract facts for each document, skipping those already on disk
+    #    We use the doc_ref as the on-disk key (sanitised to a filename).
+    def _fact_path(doc_ref: str) -> Path:
+        safe = doc_ref.replace("/", "__").replace("#", "__").replace("\\", "__")
+        return facts_dir / f"{safe}.json"
+
+    newly_extracted = 0
+    cached = 0
+    model = os.environ.get("HARNESS_MODEL", None)
+    client = None  # lazy
+
+    docs_to_extract = []
+    for doc_ref, page_texts in extract_inputs:
+        fp = _fact_path(doc_ref)
+        if fp.exists():
+            cached += 1
+        else:
+            docs_to_extract.append((doc_ref, page_texts))
+
+    if docs_to_extract:
+        extracted_map = extract_batch(
+            docs_to_extract,
+            state_dir=state_dir,
+            model=model,
+            max_workers=5,
+        )
+        for doc_ref, facts in extracted_map.items():
+            fp = _fact_path(doc_ref)
+            fp.write_text(
+                json.dumps(facts, ensure_ascii=False, indent=1),
+                encoding="utf-8",
+            )
+            newly_extracted += 1
+
+    print(
+        f"\nDone: {total_docs} document(s) total, "
+        f"{newly_extracted} newly extracted, "
+        f"{cached} already cached."
+    )
 
 
 def report(as_of: str, mode: str, state_dir: str) -> dict:
-    raise NotImplementedError(
-        f"report is not written yet: return the report.json dict for --as-of {as_of} in {mode} mode "
-        "(see grader/schema/report.schema.json and data/examples/*/expected_finding.json)")
+    """Return the report.json dict for --as-of *as_of* in *mode* mode.
+    Loads ALL stored facts and feedback under *state_dir* and recomputes from
+    scratch each time (no caching of findings).
+    """
+    _harness_dir = Path(__file__).resolve().parent
+    sys.path.insert(0, str(_harness_dir))
+    import store
+
+    # Load all stored facts and feedback from scratch each time
+    all_facts = store.load_all_facts(state_dir)
+    all_feedback = store.load_all_feedback(state_dir)
+
+    # Recomputation logic
+    from checks.expiry import check_expiry
+    from checks.overcharge import check_overcharge
+    from checks.waived_but_billed import check_waived_but_billed
+    from checks.duplicate import check_duplicate
+    from checks.late_fees import check_late_fees
+    from checks.cashback_credits import check_cashback_credits
+
+    late_fee_items = check_late_fees(all_facts, as_of, mode=mode)
+    cashback_items = check_cashback_credits(all_facts, as_of, mode=mode)
+
+    findings: list[dict] = []
+    findings.extend(check_overcharge(all_facts, as_of, mode=mode))
+    findings.extend(check_waived_but_billed(all_facts, as_of, mode=mode))
+    findings.extend(check_duplicate(all_facts, as_of, mode=mode))
+    findings.extend([it for it in late_fee_items if it.get("class") == "late_fee_not_owed"])
+
+    from conflicts import detect_conflicts, detect_cannot_determine
+    from feedback import process_feedback_on_findings
+
+    findings = detect_conflicts(findings, all_facts, as_of_date=as_of, mode=mode)
+    findings = detect_cannot_determine(findings, all_facts, as_of_date=as_of, mode=mode)
+    findings = process_feedback_on_findings(findings, state_dir=state_dir, all_facts=all_facts)
+
+    # Deduplicate findings so each finding has unique id and unique (class, item_id)
+    seen_ids: set[str] = set()
+    seen_class_keys: set[tuple[Any, Any]] = set()
+    deduped_findings: list[dict] = []
+    for f in findings:
+        fid = f.get("id")
+        fkey = (f.get("class"), f.get("invoice_id") or fid)
+        if fid not in seen_ids and fkey not in seen_class_keys:
+            seen_ids.add(fid)
+            seen_class_keys.add(fkey)
+            deduped_findings.append(f)
+    findings = deduped_findings
+
+    findings.sort(key=lambda x: (x.get("class", ""), x.get("id", "")))
+    cashback: list[dict] = sorted([it for it in cashback_items if it.get("verdict") == "finding"], key=lambda x: x.get("id", ""))
+    expiry: list[dict] = sorted(check_expiry(all_facts, as_of), key=lambda x: x.get("id", ""))
+    late_fee_risk: list[dict] = sorted([it for it in late_fee_items if it.get("class") == "late_fee_risk"], key=lambda x: x.get("id", ""))
+
+    from actions import generate_action
+
+    actions_list: list[dict] = []
+    for item in findings:
+        act = generate_action(item, mode=mode, state_dir=state_dir)
+        if act:
+            actions_list.append(act)
+
+    for item in cashback:
+        act = generate_action(item, mode=mode, state_dir=state_dir)
+        if act:
+            actions_list.append(act)
+
+    for item in expiry:
+        act = generate_action(item, mode=mode, state_dir=state_dir)
+        if act:
+            actions_list.append(act)
+
+    for item in late_fee_risk:
+        act = generate_action(item, mode=mode, state_dir=state_dir)
+        if act:
+            actions_list.append(act)
+
+    return {
+        "schema_version": "1.0",
+        "as_of": as_of,
+        "mode": mode,
+        "findings": findings,
+        "portfolio": {
+            "cashback": cashback,
+            "expiry": expiry,
+            "late_fee_risk": late_fee_risk,
+        },
+        "actions": actions_list,
+    }
 
 
 def feedback(feedback_file: str, state_dir: str) -> None:
-    raise NotImplementedError(
-        f"feedback is not written yet: store the decisions in {feedback_file} under {state_dir} so later reports use them")
+    """Store decisions from *feedback_file* under *state_dir* so later reports use them."""
+    _harness_dir = Path(__file__).resolve().parent
+    sys.path.insert(0, str(_harness_dir))
+    import store
+
+    saved = store.save_feedback(state_dir, feedback_file)
+    print(f"Stored feedback in {saved}", file=sys.stderr)
 
 
 def main(argv=None) -> int:

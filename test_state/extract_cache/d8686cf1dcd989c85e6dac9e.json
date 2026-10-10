@@ -1,0 +1,57 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0025.eml",
+    "page": 1
+   },
+   "quote": "Under clause 3.5 we give notice of the following rates for lane USE2-INW2, effective 2035-03-13 to 2035-09-25",
+   "event_type": "rate_notice",
+   "sender_name": "Joaquin Rathbone",
+   "sender_email": "joaquin.rathbone@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2035-03-07",
+   "author": "Joaquin Rathbone"
+  },
+  {
+   "fact_type": "amendment",
+   "source": {
+    "doc_ref": "batch_01/0025.eml",
+    "page": 1
+   },
+   "quote": "Reference: TBX-US-EXP-01/RN-USE2-INW2-2035-03-13\nUnder clause 3.5 we give notice of the following rates for lane USE2-INW2, effective 2035-03-13 to 2035-09-25",
+   "amendment_id": "TBX-US-EXP-01/RN-USE2-INW2-2035-03-13",
+   "amends_contract": "TBX-US-EXP-01",
+   "effective_date": "2035-03-13",
+   "changes": [
+    {
+     "field": "minimum_charge",
+     "new_value": "91.56",
+     "lane": "USE2-INW2"
+    },
+    {
+     "field": "rate_0_44.5_kg",
+     "new_value": "7.43",
+     "lane": "USE2-INW2"
+    },
+    {
+     "field": "rate_45_99.5_kg",
+     "new_value": "6.60",
+     "lane": "USE2-INW2"
+    },
+    {
+     "field": "rate_100_299.5_kg",
+     "new_value": "5.86",
+     "lane": "USE2-INW2"
+    },
+    {
+     "field": "rate_300_plus_kg",
+     "new_value": "5.21",
+     "lane": "USE2-INW2"
+    }
+   ],
+   "author": "Joaquin Rathbone"
+  }
+ ]
+}

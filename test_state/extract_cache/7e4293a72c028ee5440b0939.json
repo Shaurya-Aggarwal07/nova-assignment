@@ -1,0 +1,30 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0008.eml",
+    "page": 1
+   },
+   "event_type": "other",
+   "sender_name": "Lena Zeller",
+   "sender_email": "lena.zeller@tarrowby.example",
+   "sender_party": "Tarrowby Express India Pvt. Ltd.",
+   "email_date": "2034-12-30",
+   "description": "Transmission of executed Master Services Agreement (Express Air) TBX-IN-EXP-01, effective 2035-01-06",
+   "quote": "Attached is the executed Master Services Agreement (Express Air) TBX-IN-EXP-01, signed by both parties. It takes effect on 2035-01-06.",
+   "author": "Lena Zeller"
+  },
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "batch_01/0008.eml",
+    "page": 1
+   },
+   "contract_id": "TBX-IN-EXP-01",
+   "effective_date": "2035-01-06",
+   "quote": "executed Master Services Agreement (Express Air) TBX-IN-EXP-01, signed by both parties. It takes effect on 2035-01-06.",
+   "author": "Lena Zeller"
+  }
+ ]
+}

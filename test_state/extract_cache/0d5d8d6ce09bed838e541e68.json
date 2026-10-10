@@ -1,0 +1,465 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "batch_01/0001.eml#MSA-TBX-US-EXP-01.pdf",
+    "page": 3
+   },
+   "quote": "Agreement No. TBX-US-EXP-01 ... Dated 2034-09-27",
+   "contract_id": "TBX-US-EXP-01",
+   "effective_date": "2034-10-20",
+   "end_date": "2035-10-19",
+   "auto_renew": false,
+   "notice_days": 90,
+   "currency": "USD",
+   "payment_terms_days": 45,
+   "grace_days": 0,
+   "late_fee_rate_pct": "1.98",
+   "late_fee_compounds": true,
+   "precedence_clause": "Signed amendment > this Agreement > Annexes. Between amendments, the later effective date prevails for the terms it changes.",
+   "waiver_clause": "A waiver applies only to the charges and shipments it names. No waiver is a waiver of any later charge, and no course of dealing creates one.",
+   "rebate_tiers": [
+    {
+     "min_spend_usd": "79000.00",
+     "rate_pct": "5",
+     "period": "Quarter"
+    },
+    {
+     "min_spend_usd": "120000.00",
+     "rate_pct": "7.5",
+     "period": "Quarter"
+    },
+    {
+     "min_spend_usd": "202000.00",
+     "rate_pct": "10",
+     "period": "Quarter"
+    }
+   ],
+   "margin_step_down": "Not applicable to this Agreement.",
+   "promised_credits": [
+    {
+     "description": "Annual improvement credit",
+     "rate_pct": "1.42",
+     "basis": "prior Contract Year Qualifying Spend",
+     "timing": "within 60 days after each anniversary of the Effective Date"
+    }
+   ],
+   "fx_rates": [
+    {
+     "note": "Not applicable: all charges under this Agreement are in USD."
+    }
+   ],
+   "schedule_1_contacts": [
+    {
+     "name": "Joaquin Rathbone",
+     "title": "Key Account Manager",
+     "party": "TBX-US",
+     "categories": [
+      "notices",
+      "billing_disputes"
+     ],
+     "email": "joaquin.rathbone@tarrowby.example"
+    },
+    {
+     "name": "Fintan Corrigan",
+     "title": "Pricing Manager",
+     "party": "TBX-US",
+     "categories": [
+      "rates"
+     ],
+     "email": "fintan.corrigan@tarrowby.example"
+    },
+    {
+     "name": "Signe Underhill",
+     "title": "Customer Finance Lead",
+     "party": "TBX-US",
+     "categories": [
+      "waivers",
+      "payment_terms"
+     ],
+     "email": "signe.underhill@tarrowby.example"
+    },
+    {
+     "name": "Odette Sandoval",
+     "title": "Treasury Analyst",
+     "party": "TBX-US",
+     "categories": [
+      "treasury"
+     ],
+     "email": "odette.sandoval@tarrowby.example"
+    },
+    {
+     "name": "Isolde Pembroke",
+     "title": "AP Manager",
+     "party": "QMP-US",
+     "categories": [
+      "notices",
+      "payment_terms",
+      "billing_disputes"
+     ],
+     "email": "isolde.pembroke@quillmere.example"
+    },
+    {
+     "name": "Sunil Yardley",
+     "title": "Logistics Director",
+     "party": "QMP-US",
+     "categories": [
+      "rates"
+     ],
+     "email": "sunil.yardley@quillmere.example"
+    }
+   ],
+   "surcharges": [
+    {
+     "code": "FUEL",
+     "description": "Fuel surcharge",
+     "basis": "percentage of base freight, by month of Pickup Date"
+    },
+    {
+     "code": "SEC",
+     "description": "Security surcharge",
+     "rate": "0.12",
+     "unit": "USD per chargeable kg"
+    },
+    {
+     "code": "PEAK",
+     "description": "Peak season surcharge",
+     "rate": "0.29",
+     "unit": "USD per chargeable kg",
+     "condition": "pickups in September to November only"
+    }
+   ],
+   "rates": [
+    {
+     "lane": "USS2-INN1",
+     "weight_band": "minimum charge",
+     "P1_rate": "91.00",
+     "P2_rate": "91.00",
+     "unit": "USD"
+    },
+    {
+     "lane": "USS2-INN1",
+     "weight_band": "0-44.5 kg",
+     "P1_rate": "8.98",
+     "P2_rate": "8.94",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USS2-INN1",
+     "weight_band": "45-99.5 kg",
+     "P1_rate": "8.38",
+     "P2_rate": "8.34",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USS2-INN1",
+     "weight_band": "100-299.5 kg",
+     "P1_rate": "7.82",
+     "P2_rate": "7.79",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USS2-INN1",
+     "weight_band": "300+ kg",
+     "P1_rate": "7.30",
+     "P2_rate": "7.27",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-INS1",
+     "weight_band": "minimum charge",
+     "P1_rate": "85.00",
+     "P2_rate": "85.00",
+     "unit": "USD"
+    },
+    {
+     "lane": "USC3-INS1",
+     "weight_band": "0-44.5 kg",
+     "P1_rate": "4.94",
+     "P2_rate": "4.92",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-INS1",
+     "weight_band": "45-99.5 kg",
+     "P1_rate": "4.71",
+     "P2_rate": "4.69",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-INS1",
+     "weight_band": "100-299.5 kg",
+     "P1_rate": "4.49",
+     "P2_rate": "4.47",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-INS1",
+     "weight_band": "300+ kg",
+     "P1_rate": "4.28",
+     "P2_rate": "4.27",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "minimum charge",
+     "P1_rate": "90.00",
+     "P2_rate": "90.00",
+     "unit": "USD"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "0-44.5 kg",
+     "P1_rate": "3.73",
+     "P2_rate": "3.71",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "45-99.5 kg",
+     "P1_rate": "3.55",
+     "P2_rate": "3.54",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "100-299.5 kg",
+     "P1_rate": "3.39",
+     "P2_rate": "3.37",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USC3-USS2",
+     "weight_band": "300+ kg",
+     "P1_rate": "3.23",
+     "P2_rate": "3.21",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE2-INW2",
+     "weight_band": "minimum charge",
+     "P1_rate": "87.00",
+     "P2_rate": "87.00",
+     "unit": "USD"
+    },
+    {
+     "lane": "USE2-INW2",
+     "weight_band": "0-44.5 kg",
+     "P1_rate": "7.06",
+     "P2_rate": "7.03",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE2-INW2",
+     "weight_band": "45-99.5 kg",
+     "P1_rate": "6.27",
+     "P2_rate": "6.25",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE2-INW2",
+     "weight_band": "100-299.5 kg",
+     "P1_rate": "5.57",
+     "P2_rate": "5.55",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE2-INW2",
+     "weight_band": "300+ kg",
+     "P1_rate": "4.95",
+     "P2_rate": "4.93",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USS2-INW2",
+     "weight_band": "minimum charge",
+     "P1_rate": "47.00",
+     "P2_rate": "47.00",
+     "unit": "USD"
+    },
+    {
+     "lane": "USS2-INW2",
+     "weight_band": "0-44.5 kg",
+     "P1_rate": "3.33",
+     "P2_rate": "3.32",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USS2-INW2",
+     "weight_band": "45-99.5 kg",
+     "P1_rate": "3.08",
+     "P2_rate": "3.06",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USS2-INW2",
+     "weight_band": "100-299.5 kg",
+     "P1_rate": "2.84",
+     "P2_rate": "2.83",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USS2-INW2",
+     "weight_band": "300+ kg",
+     "P1_rate": "2.62",
+     "P2_rate": "2.61",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE1-USW2",
+     "weight_band": "minimum charge",
+     "P1_rate": "73.00",
+     "P2_rate": "73.00",
+     "unit": "USD"
+    },
+    {
+     "lane": "USE1-USW2",
+     "weight_band": "0-44.5 kg",
+     "P1_rate": "7.08",
+     "P2_rate": "7.05",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE1-USW2",
+     "weight_band": "45-99.5 kg",
+     "P1_rate": "6.63",
+     "P2_rate": "6.60",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE1-USW2",
+     "weight_band": "100-299.5 kg",
+     "P1_rate": "6.21",
+     "P2_rate": "6.19",
+     "unit": "USD/chargeable kg"
+    },
+    {
+     "lane": "USE1-USW2",
+     "weight_band": "300+ kg",
+     "P1_rate": "5.82",
+     "P2_rate": "5.80",
+     "unit": "USD/chargeable kg"
+    }
+   ],
+   "fuel_surcharge_schedule": [
+    {
+     "month": "2034-10",
+     "rate_pct": "17.49"
+    },
+    {
+     "month": "2034-11",
+     "rate_pct": "18.38"
+    },
+    {
+     "month": "2034-12",
+     "rate_pct": "17.17"
+    },
+    {
+     "month": "2035-01",
+     "rate_pct": "19.41"
+    },
+    {
+     "month": "2035-02",
+     "rate_pct": "20.53"
+    },
+    {
+     "month": "2035-03",
+     "rate_pct": "21.53"
+    },
+    {
+     "month": "2035-04",
+     "rate_pct": "23.87"
+    },
+    {
+     "month": "2035-05",
+     "rate_pct": "23.59"
+    },
+    {
+     "month": "2035-06",
+     "rate_pct": "24.54"
+    },
+    {
+     "month": "2035-07",
+     "rate_pct": "22.90"
+    },
+    {
+     "month": "2035-08",
+     "rate_pct": "22.36"
+    },
+    {
+     "month": "2035-09",
+     "rate_pct": "21.89"
+    },
+    {
+     "month": "2035-10",
+     "rate_pct": "21.52"
+    }
+   ],
+   "accessorials": [
+    {
+     "code": "DG",
+     "description": "Dangerous goods fee",
+     "rate": "124.02",
+     "unit": "USD per shipment"
+    },
+    {
+     "code": "DRYICE",
+     "description": "Dry ice handling fee",
+     "rate": "45.40",
+     "unit": "USD per shipment"
+    },
+    {
+     "code": "SEC",
+     "description": "Security surcharge",
+     "rate": "0.12",
+     "unit": "USD per chargeable kg"
+    },
+    {
+     "code": "STOR",
+     "description": "Storage",
+     "rate": "28.88",
+     "unit": "USD per storage day"
+    },
+    {
+     "code": "DLV",
+     "description": "Delivery fee",
+     "rate": "116.13",
+     "unit": "USD per shipment"
+    },
+    {
+     "code": "CUSTOMS",
+     "description": "Customs hold fee",
+     "rate": "227.14",
+     "unit": "USD per shipment"
+    },
+    {
+     "code": "ACCT",
+     "description": "Monthly account fee",
+     "rate": "350.28",
+     "unit": "USD per month"
+    },
+    {
+     "code": "SPROG",
+     "description": "Storage programme fee",
+     "rate": "678.00",
+     "unit": "USD per month"
+    },
+    {
+     "code": "PPROG",
+     "description": "Pickup programme fee",
+     "rate": "398.22",
+     "unit": "USD per month"
+    },
+    {
+     "code": "PEAK",
+     "description": "Peak season surcharge",
+     "rate": "0.29",
+     "unit": "USD per chargeable kg",
+     "condition": "pickups in September to November only"
+    }
+   ],
+   "author": "Rupert Stavros (Shipper), Wilhelmina Montague (Carrier)"
+  }
+ ]
+}

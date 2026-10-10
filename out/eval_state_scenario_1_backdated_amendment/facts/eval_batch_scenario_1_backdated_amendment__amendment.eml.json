@@ -1,0 +1,35 @@
+{
+ "facts": [
+  {
+   "fact_type": "amendment",
+   "amendment_id": "AMENDMENT-1",
+   "amends_contract": "MSA-001",
+   "effective_date": "2024-01-01",
+   "changes": [
+    {
+     "field": "rate",
+     "new_value": "450",
+     "lane": "DEL-BOM",
+     "unit": "INR per kg"
+    }
+   ],
+   "source": {
+    "doc_ref": "eval_batch_scenario_1_backdated_amendment/amendment.eml",
+    "page": 1
+   },
+   "quote": "Effective 2024-01-01, DEL-BOM rate changed to INR 450 per kg."
+  },
+  {
+   "fact_type": "email_event",
+   "event_type": "rate_notice",
+   "email_date": "2024-01-01",
+   "subject": "Amendment 1",
+   "description": "Amendment to MSA-001 notifying rate change for DEL-BOM lane effective 2024-01-01.",
+   "source": {
+    "doc_ref": "eval_batch_scenario_1_backdated_amendment/amendment.eml",
+    "page": 1
+   },
+   "quote": "Amendment to MSA-001.\nEffective 2024-01-01, DEL-BOM rate changed to INR 450 per kg."
+  }
+ ]
+}

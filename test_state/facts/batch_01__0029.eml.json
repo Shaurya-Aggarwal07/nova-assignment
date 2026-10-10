@@ -1,0 +1,20 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0029.eml",
+    "page": 1
+   },
+   "event_type": "other",
+   "sender_name": "Kavya Varadan",
+   "sender_email": "kavya.varadan@ashgrove.example",
+   "sender_party": "Ashgrove Clearing Services",
+   "email_date": "2035-04-09",
+   "subject": "Customs hold TX43196050",
+   "shipment_id": "TX43196050",
+   "description": "Shipment TX43196050 placed on customs hold at INW2 on 2035-04-09 due to SHIPPER_PERMIT_MISSING; released on 2035-04-13.",
+   "quote": "Shipment TX43196050 was placed on customs hold on 2035-04-09 at INW2.\nReason code SHIPPER_PERMIT_MISSING: the shipper's import permit was not provided with the shipment documents.\nReleased on 2035-04-13."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "facts": [
+  {
+   "fact_type": "shipment_record",
+   "awb": "TX25373399",
+   "carrier": "Tarrowby Express Inc.",
+   "executed_date": "2035-01-16",
+   "origin": "USE1",
+   "destination": "USW2",
+   "pieces": 1,
+   "actual_weight_kg": "373.7",
+   "chargeable_weight_kg": "374",
+   "dimensions_cm": "110x110x110",
+   "nature_of_goods": "clinical trial samples",
+   "tracking_events": [],
+   "source": {
+    "doc_ref": "batch_01/0013.eml#AWB-TX25373399.pdf",
+    "page": 1
+   },
+   "quote": "AIR WAYBILL TX25373399\nExecuted on 2035-01-16 at USE1\nOrigin USE1 | Destination USW2\nPieces 1\nActual weight 373.7 kg\nChargeable weight 374 kg"
+  }
+ ]
+}

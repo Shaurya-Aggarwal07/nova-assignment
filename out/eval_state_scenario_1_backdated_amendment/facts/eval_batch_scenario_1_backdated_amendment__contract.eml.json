@@ -1,0 +1,24 @@
+{
+ "facts": [
+  {
+   "fact_type": "contract_terms",
+   "source": {
+    "doc_ref": "eval_batch_scenario_1_backdated_amendment/contract.eml",
+    "page": 1
+   },
+   "quote": "Contract MSA-001\nBase rate for DEL-BOM is INR 500 per kg.",
+   "contract_id": "MSA-001",
+   "effective_date": "2024-01-01",
+   "currency": "INR",
+   "rates": [
+    {
+     "lane": "DEL-BOM",
+     "charge_type": "base_rate",
+     "rate": "500",
+     "unit": "per kg",
+     "currency": "INR"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "harness": "harness/harness.py",
+ "passed": 0,
+ "total": 2,
+ "your_cases": 0,
+ "score": 0.0,
+ "cases": [
+  {
+   "case": "sample_conflict.yaml",
+   "name": "amendment and rate notice disagree",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "sample_overcharge.yaml",
+   "name": "wrong rate on one freight line",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  }
+ ]
+}

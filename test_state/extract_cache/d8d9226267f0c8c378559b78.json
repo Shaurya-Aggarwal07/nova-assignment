@@ -1,0 +1,19 @@
+{
+ "facts": [
+  {
+   "fact_type": "email_event",
+   "source": {
+    "doc_ref": "batch_01/0018.eml",
+    "page": 1
+   },
+   "quote": "Please find attached invoice TX-US-2035-0195 for services under TBX-US-EXP-01. Kindly process payment by the due date shown.",
+   "event_type": "other",
+   "sender_name": "Tarrowby Billing",
+   "sender_email": "billing@tarrowby.example",
+   "sender_party": "Tarrowby Express Inc.",
+   "email_date": "2035-02-25",
+   "referenced_invoice_id": "TXUS20350195",
+   "referenced_contract_id": "TBX-US-EXP-01"
+  }
+ ]
+}
